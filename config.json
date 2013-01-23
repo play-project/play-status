@@ -1,0 +1,65 @@
+{
+  "title": "Play Platform Status",
+  "hostname": "127.0.0.1",
+  "port": 8080,
+  "client": {
+    "transports": []
+  },
+  "services": [
+    {
+      "name": "chamerling.org", 
+      "label": "chamerling.org",
+      "check": "http",
+      "host": "chamerling.org", 
+      "port": 80,
+      "path": "/"
+    },
+    {
+      "name": "DCEP", 
+      "label": "DCEP",
+      "check": "http",
+      "host": "demo.play-project.eu", 
+      "port": 8084,
+      "path": "/play/QueryDispatchApi"
+    },
+    {
+      "name": "DSB", 
+      "label": "DSB",
+      "check": "http",
+      "host": "46.105.181.221", 
+      "port": 8084,
+      "path": "/"
+    },
+    {
+      "name": "EventCloud-Management", 
+      "label": "EventCloud-Management",
+      "check": "http",
+      "host": "138.96.19.125", 
+      "port": 8082,
+      "path": "/proactive/services/eventclouds/management-webservices"
+    },
+    {
+      "name": "Gov WebApp", 
+      "label": "Gov WebApp",
+      "check": "http",
+      "host": "46.105.181.221", 
+      "port": 9000,
+      "path": "/"
+    },
+    {
+      "name": "WebApp", 
+      "label": "WebApp",
+      "check": "http",
+      "host": "demo.play-project.eu", 
+      "port": 80,
+      "path": "/login"
+    }
+  ],
+  "plugins" : {
+    "console" : {
+      "enable": false
+    }
+  },
+  "serviceInterval": 20000,
+  "serviceDelay": 500
+}

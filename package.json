@@ -1,0 +1,33 @@
+{
+  "name": "play-status",
+  "version": "0.0.1",
+  "description": "Technical Monitoring",
+  "author": "Christophe Hamerling <christophe.hamerling@linagora.com>",
+  "homepage": "http://github.com/play-project/play-status",
+  "keywords": [
+    "node"
+  ],
+  "maintainers": [{
+    "name": "Christophe Hamerling",
+    "email": "christophe.hamerling@linagora.com"
+  }],
+  "contributors": [],
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://mths.be/mit"
+  }],
+  "bugs": {
+    "url": "https://github.com/play-project/play-status/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/play-project/play-status.git"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.0.x"
+  },
+  "dependencies": {
+    "statusdashboard" : "latest"
+  }
+}
