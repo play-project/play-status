@@ -2,6 +2,12 @@
 
 Play Status embeds [statusdashboard](https://github.com/obazoud/statusdashboard) to provide technical level monitoring of the Play platform. 
 
+## Notes
+
+The application is deployed on Heroku at http://playplatformstatus.herokuapp.com and periodically pings PLAY services. In order to keep it alive, the application also pings itself with the statusdashboard heartbeat plugin. When deploying for the first time, the HEARTBEAT_URL must be set like
+
+    heroku config:add HEARTBEAT_URL=http://playplatformstatus.herokuapp.com
+
 ## License
 
 (The MIT License)

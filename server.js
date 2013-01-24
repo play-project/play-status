@@ -23,10 +23,7 @@ process.on('uncaughtException', function(err) {
   util.log(err.stack.replace(/^    /gm, '                  '));
 });
 
-/* Not available in npmjs for now
 var dashboard = new server.dashboard(settings, function() {
   console.log('Server is started!!!');
   console.log(settings)
 });
-*/
-var dashboard = new server.dashboard(settings);

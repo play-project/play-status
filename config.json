@@ -7,14 +7,6 @@
   },
   "services": [
     {
-      "name": "chamerling.org", 
-      "label": "chamerling.org",
-      "check": "http",
-      "host": "chamerling.org", 
-      "port": 80,
-      "path": "/"
-    },
-    {
       "name": "DCEP", 
       "label": "DCEP",
       "check": "http",
@@ -58,6 +50,19 @@
   "plugins" : {
     "console" : {
       "enable": false
+    },
+    "irc" : {
+      "enable": true,
+      "server": "irc.freenode.net",
+      "nick": "ow2playstatusbot",
+      "options": {
+        "debug": false,
+        "channels": ["#ow2playstatus"]
+      }
+    },
+    "heartbeat": {
+      "enable": true,
+      "period": 20000
     }
   },
   "serviceInterval": 20000,
