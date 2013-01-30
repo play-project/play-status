@@ -23,12 +23,20 @@
       "path": "/"
     },
     {
-      "name": "EventCloud-Management", 
-      "label": "EventCloud-Management",
+      "name": "EventClouds Management (stable)", 
+      "label": "EventClouds Management (stable)",
       "check": "http",
       "host": "138.96.19.125", 
       "port": 8082,
-      "path": "/proactive/services/eventclouds/management-webservices"
+      "path": "/proactive/services/eventclouds/management-webservices?wsdl"
+    },
+    {
+      "name": "EventClouds Management (unstable)", 
+      "label": "EventClouds Management (unstable)",
+      "check": "http",
+      "host": "138.96.19.125", 
+      "port": 8085,
+      "path": "/proactive/services/eventclouds/management-webservices?wsdl"
     },
     {
       "name": "Gov WebApp", 
